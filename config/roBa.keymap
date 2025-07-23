@@ -25,14 +25,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        eq {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <34 40>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -79,10 +72,10 @@
 
         layer_2 {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7              &kp F8     &kp F9               &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK           &mkp RCLK  &mkp MCLK            &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(LEFT_ARROW)  &trans     &kp LC(RIGHT_ARROW)  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                      &trans
+&kp F1          &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7              &kp F8     &kp F9               &kp F10
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK           &mkp RCLK  &mkp MCLK            &kp F11
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(LEFT_ARROW)  &trans     &kp LC(RIGHT_ARROW)  &kp F12
+&kp LANGUAGE_1  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                      &trans
             >;
         };
 
