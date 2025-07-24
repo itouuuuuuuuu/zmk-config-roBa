@@ -25,7 +25,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        lang {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <34 42>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -65,7 +72,7 @@
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR          &kp PERCENT                      &kp AMPERSAND     &kp CARET          &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &trans           &trans       &trans     &kp MINUS           &kp EQUAL    &trans      &trans  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW   &kp RIGHT_ARROW       &kt SEMICOLON
-&kp BACKSLASH    &kp GRAVE    &kp TILDE  &kp LS(UNDERSCORE)  &kp PLUS     &trans      &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN      &trans
+&kp BACKSLASH    &kp GRAVE    &kp TILDE  &kp LS(UNDERSCORE)  &kp PLUS     &trans      &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION
 &trans           &trans       &trans     &trans              &trans       &trans      &trans  &trans                                                                    &trans
             >;
         };
