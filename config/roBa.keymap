@@ -65,7 +65,7 @@
 &kp LANGUAGE_2    &kp LEFT_ALT        &kp LEFT_META        &mo 1  &lt 2 SPACE  &lt_to_layer_0 5 TAB      &mt RIGHT_SHIFT BACKSPACE  &mt RIGHT_META ENTER                             &mt RCTRL ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp LG(KP_PLUS) LG(KP_MINUS)>;
         };
 
         layer_1 {
