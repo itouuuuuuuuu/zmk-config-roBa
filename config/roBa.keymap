@@ -32,6 +32,26 @@
             bindings = <&kp LANGUAGE_1>;
             key-positions = <34 40>;
         };
+
+        next {
+            bindings = <&kp LG(RIGHT_BRACKET)>;
+            key-positions = <18 19>;
+        };
+
+        prev {
+            bindings = <&kp LG(LEFT_BRACKET)>;
+            key-positions = <12 13>;
+        };
+
+        next_tab {
+            bindings = <&kp LG(LS(LEFT_BRACKET))>;
+            key-positions = <20 21>;
+        };
+
+        prev_tab {
+            bindings = <&kp LG(LS(LEFT_BRACKET))>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
