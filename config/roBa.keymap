@@ -44,7 +44,7 @@
         };
 
         next_tab {
-            bindings = <&kp LG(LS(LEFT_BRACKET))>;
+            bindings = <&kp LG(LS(RIGHT_BRACKET))>;
             key-positions = <20 21>;
         };
 
