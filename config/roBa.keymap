@@ -108,10 +108,10 @@
 
         layer_3_text_select {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans              &trans              &trans            &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT)      &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LG(LEFT))    &kp LS(LG(DOWN))    &kp LS(LG(UP))    &kp LS(LG(RIGHT))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                       &trans
+&trans  &trans  &trans  &trans  &trans                      &trans                  &trans                  &trans                &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LG(LS(LEFT_ARROW))  &kp LG(LS(DOWN_ARROW))  &kp LG(LS(UP_ARROW))  &kp LG(LS(RIGHT))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LG(LEFT)            &kp LG(DOWN)            &kp LG(UP)            &kp LG(RIGHT)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                                   &trans
             >;
         };
 
@@ -135,10 +135,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans              &trans              &trans            &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LS(LEFT))    &kp LA(LS(DOWN))    &kp LA(LS(UP))    &kp LA(LS(RIGHT))    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                         &trans
+&trans  &trans  &trans  &trans  &trans                      &trans                  &trans                  &trans                &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LS(LEFT_ARROW))  &kp LA(LS(DOWN_ARROW))  &kp LA(LS(UP_ARROW))  &kp LA(LS(RIGHT_ARROW))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LEFT)            &kp LA(DOWN)            &kp LA(UP)            &kp LA(RIGHT)            &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                                         &trans
             >;
         };
 
