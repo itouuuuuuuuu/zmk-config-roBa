@@ -81,7 +81,7 @@
         default_layer {
             bindings = <
 &lt 8 Q                &kp W                    &kp E                     &kp R  &kp T                                                             &kp Y                 &kp U  &kp I                 &kp O                 &kp P
-&mt_slow LEFT_SHIFT A  &kp S                    &kp D                     &kp F  &kp G        &kp LG(MINUS)             &kp LG(PLUS)               &kp H                 &kp J  &kp K                 &kp L                 &kp MINUS
+&mt_slow LEFT_SHIFT A  &kp S                    &kp D                     &kp F  &kp G        &kp LG(MINUS)             &mo 4                      &kp H                 &kp J  &kp K                 &kp L                 &kp MINUS
 &kp Z                  &mt_slow LS(LEFT_ALT) X  &mt_slow LS(LEFT_META) C  &kp V  &kp B        &kp LEFT_BRACKET          &kp RIGHT_BRACKET          &kp N                 &kp M  &mt RIGHT_META COMMA  &mt RIGHT_ALT PERIOD  &mt_fast RCTRL SLASH
 &lt 7 LANG2            &mo 6                    &mo 3                     &mo 1  &lt 2 SPACE  &lt_to_layer_0 5 TAB      &mt RIGHT_SHIFT BACKSPACE  &mt RIGHT_META ENTER                                                     &kp ESCAPE
             >;
@@ -114,12 +114,12 @@
             >;
         };
 
-        layer_4 {
+        layer_4_mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
         };
 
