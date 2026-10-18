@@ -4,12 +4,11 @@
 
 | リモート | URL | 用途 |
 |---|---|---|
-| origin | github.com/itouuuuuuuuu/zmk-config-roBa | 自分の fork。push と PR はここだけ |
-| upstream | github.com/kumamuk-git/zmk-config-roBa | 本家。fetch / pull のみ |
+| origin | github.com/itouuuuuuuuu/zmk-config-roBa | 唯一のリモート。push と PR はここだけ |
 
-- upstream への push・PR 作成・Issue 操作は禁止。ローカルでは upstream の push URL を `DISABLED` にし、
-  `.claude/settings.local.json` の PreToolUse hook でも upstream 宛ての push と kumamuk-git 宛ての gh 操作を deny している。
-- upstream の取り込みは `git fetch upstream && git merge --no-ff upstream/main` を feature ブランチ上で行い、PR にする (PR #2 の形式)。
+- 2026-10-19 に fork ネットワークから離脱し、`upstream` リモートも削除した。本家 (kumamuk-git/zmk-config-roBa) への push・PR はしない。
+- 本家の変更を取り込みたいときは、一時的に remote を追加して feature ブランチに cherry-pick し、PR にする。取り込み後は remote を削除する。
+- `.claude/settings.local.json` に、本家宛ての push や gh 操作を deny する PreToolUse hook が残っている (ローカル専用、保険)。
 
 ## ブランチと PR
 
