@@ -1,20 +1,21 @@
 # AGENTS.md
 
 roBa (分割型キーボード、右手にトラックボール) 用の ZMK ファームウェア設定リポジトリ。
-kumamuk-git/zmk-config-roBa の fork で、itouuuuuuuuu の個人用にカスタマイズしている。
+元は kumamuk-git/zmk-config-roBa の fork だったが、2026-10-19 に fork ネットワークから離脱し、itouuuuuuuuu の独立リポジトリになった。
+本家との関連はトラックボールドライバ (`zmk-pmw3610-driver`) の依存だけ。
 
 詳細なルールは `.claude/rules/` にある。ファイルを触る前に該当するルールを読むこと。
 
 | ルール | 対象 |
 |---|---|
-| `.claude/rules/git-workflow.md` | ブランチ・PR・upstream の扱い (常に適用) |
+| `.claude/rules/git-workflow.md` | ブランチ・PR の手順 (常に適用) |
 | `.claude/rules/firmware-build.md` | ビルド・CI・書き込み手順 (常に適用) |
 | `.claude/rules/trackball.md` | `boards/shields/roBa/roBa_R.conf` のトラックボール設定 |
 | `.claude/rules/keymap.md` | `config/roBa.keymap` のレイヤー構成 |
 
 ## 絶対に守ること
 
-- **upstream (kumamuk-git/zmk-config-roBa) へ push・PR・変更をしない**。常に origin (itouuuuuuuuu) を使う。
+- **リモートは origin (itouuuuuuuuu/zmk-config-roBa) のみ**。他のリポジトリへ push や PR をしない。
 - **main に直接コミットしない**。必ず最新 main から feature ブランチを切る。
 - マージはユーザーが行う。「マージして」と明示されたときだけ Claude がマージする。
 - 実機の動作確認は Claude にはできない。PR の Test Plan にはユーザーが確認する項目として書く。
