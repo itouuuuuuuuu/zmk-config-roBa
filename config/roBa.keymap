@@ -29,7 +29,7 @@
 
         lang1 {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <34 40>;
+            key-positions = <34 42>;
         };
     };
 
